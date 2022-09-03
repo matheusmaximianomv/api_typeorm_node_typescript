@@ -1,0 +1,52 @@
+{
+  "name": "api-vendas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/http/server.ts",
+    "lint": "eslint . --ext .ts",
+    "lint-fix": "eslint . --ext .ts --fix",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/handlebars": "^4.1.0",
+    "@types/joi": "^17.2.3",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^18.7.8",
+    "@types/nodemailer": "^6.4.5",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.33.1",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^2.7.1",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "@types/date-fns": "^2.6.0",
+    "bcryptjs": "^2.4.3",
+    "celebrate": "^15.0.1",
+    "cors": "^2.8.5",
+    "date-fns": "^2.29.2",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "handlebars": "^4.7.7",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.7.8",
+    "pg": "^8.7.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "0.2.29"
+  }
+}
