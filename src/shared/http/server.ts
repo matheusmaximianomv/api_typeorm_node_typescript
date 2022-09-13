@@ -5,6 +5,7 @@ import { errors } from 'celebrate';
 
 import 'express-async-errors';
 import 'reflect-metadata';
+import 'dotenv/config';
 
 import AppError from '@shared/errors/AppError';
 import '@shared/typeorm';
